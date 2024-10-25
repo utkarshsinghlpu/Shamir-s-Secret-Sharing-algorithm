@@ -76,18 +76,4 @@ This package exposes two functions: `split` and `combine`.
 declare function split(secret: Uint8Array, shares: number, threshold: number): Promise<Uint8Array[]>;
 ```
 
-#### combine
 
-```ts
-/**
- * Combines `shares` to reconstruct the secret.
- *
- * @param shares A list of shares to reconstruct the secret from. Must be at least 2 and at most 255.
- * @returns The reconstructed secret.
- */
-declare function combine(shares: Uint8Array[]): Promise<Uint8Array>;
-```
-
-## License
-
-Apache-2.0. See the [license file](LICENSE).
